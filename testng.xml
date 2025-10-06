@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TimeCenter Test Suite" parallel="false">
+
+    <test name="Home Page Functional Tests">
+        <classes>
+            <class name="test.HomePageBasicTests">
+                <methods>
+                    <include name="clickWatchCatalogBtn"/>
+                    <include name="clickCatalogPage"/>
+                    <include name="clickMenPage"/>
+                    <include name="clickWomenPage"/>
+                    <include name="clickBestSellersPage"/>
+                    <include name="clickContactPage"/>
+                    <include name="clickHomeLnk"/>
+                    <include name="clickExploreBtn"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Search Field Tests">
+        <classes>
+            <class name="test.SearchFieldTest">
+                <methods>
+                    <include name="invalidSearchTest"/>
+                    <include name="validSearchTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
