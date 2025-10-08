@@ -52,6 +52,13 @@ public class AddToCartPage {
     @FindBy(xpath = "//body/div[@class='jsx-e0f0adb119c57f1c min-h-screen bg-product-hero mt-10']/div[2]/div[2]/div[2]/div[2]/button[2]")
     private WebElement continueShoppingBtn;
 
+    @FindBy(xpath = "/html/body/div[3]/div[4]/div[1]/div[2]/div[1]/h1")
+    private WebElement productNameHeading;
+
+    @FindBy(xpath = "/html/body/div[3]/div[4]/div[1]/div[2]/div[3]/div[1]/div/input")
+    private WebElement cartCount;
+
+
     //Add To Cart Page Methods
 
     public AddToCartPage clickPlusIcon(){
@@ -87,6 +94,16 @@ public class AddToCartPage {
     public AddToCartPage clickContinueShoppingBtn(){
         performClick(continueShoppingBtn);
         return new AddToCartPage(driver);
+
+    }
+
+    public String getProductName(){
+        return productNameHeading.getText().trim();
+    }
+
+    public int getCartItemCount(){
+        String countValue = cartCount.getAttribute("value").trim();
+        return Integer.parseInt(countValue);
     }
 
 

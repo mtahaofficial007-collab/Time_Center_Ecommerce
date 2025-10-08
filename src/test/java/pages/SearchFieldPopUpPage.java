@@ -39,6 +39,8 @@ public class SearchFieldPopUpPage {
     @FindBy(xpath = "//a[@class='jsx-48e1aa9aa03351c7 flex items-center p-4 hover:bg-gray-700/50 text-white transition-all duration-200 rounded-lg hover:shadow-md']//img[@alt='Tissot Model 561']")
     private WebElement productResult;
 
+    private WebElement searchKeyword;
+
 
     public SearchFieldPopUpPage clickSearchField() {
         performClick(searchField);
