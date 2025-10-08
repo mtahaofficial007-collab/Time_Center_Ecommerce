@@ -41,6 +41,8 @@
                     <include name="decreaseProductQuantityInCart"/>
                     <include name="deleteProductInCart"/>
                     <include name="continueShoppingAfterAddingProduct"/>
+                    <include name="verifyProductDetailsAfterAddToCart"/>
+                    <include name="verifyCartCountRemainsSameAfterRefresh"/>
                 </methods>
             </class>
         </classes>
