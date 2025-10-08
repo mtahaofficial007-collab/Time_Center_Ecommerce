@@ -4,13 +4,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class MenPage {
+import java.time.Duration;
+
+public class CheckoutPage {
 
     private WebDriver driver;
     private WebDriverWait wait;
 
-    public MenPage(WebDriver driver) {
+
+    public CheckoutPage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(driver,this);
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
+
+    //Locators of CheckoutPage
+
+
 }

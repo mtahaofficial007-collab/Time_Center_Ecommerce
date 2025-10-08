@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="TimeCenter Test Suite" parallel="false">
+<suite name="TimeCenter Test Suite" parallel="classes" thread-count="3">
 
     <test name="Home Page Functional Tests">
         <classes>
@@ -21,10 +21,26 @@
 
     <test name="Search Field Tests">
         <classes>
-            <class name="test.SearchFieldTest">
+            <class name="test.SearchFieldTests">
                 <methods>
                     <include name="invalidSearchTest"/>
                     <include name="validSearchTest"/>
+                    <include name="emptySearchTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Add To Cart Tests">
+        <classes>
+            <class name="test.AddToCartTests">
+                <methods>
+                    <include name="addSingleProduct"/>
+                    <include name="addSingleProductDirect"/>
+                    <include name="increaseProductQuantityInCart"/>
+                    <include name="decreaseProductQuantityInCart"/>
+                    <include name="deleteProductInCart"/>
+                    <include name="continueShoppingAfterAddingProduct"/>
                 </methods>
             </class>
         </classes>

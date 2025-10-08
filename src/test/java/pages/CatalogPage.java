@@ -12,6 +12,6 @@ public class CatalogPage {
 
     public CatalogPage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
 }

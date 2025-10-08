@@ -7,8 +7,10 @@ public class BestSellerPage {
 
     private WebDriver driver;
     private WebDriver wait;
+
     public BestSellerPage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver,this);}
+        PageFactory.initElements(driver, this);
+    }
 }
 
