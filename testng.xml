@@ -48,4 +48,14 @@
         </classes>
     </test>
 
+    <test name="Checkout Test">
+        <classes>
+            <class name="test.CheckOutTests">
+                <methods>
+                    <include name="completeCheckout"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
 </suite>
