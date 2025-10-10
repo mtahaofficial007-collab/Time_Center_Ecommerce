@@ -4,6 +4,7 @@ package test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.HomePage;
@@ -45,5 +46,9 @@ public class CheckOutTests {
         checkout.clickCompleteOrderBtnSafely();
         waitForSeconds(5);
 
+    }
+    @AfterMethod
+    public void quit() {
+        driver.quit();
     }
 }
