@@ -7,10 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pages.HomePage;
 
 import java.util.ArrayList;
@@ -24,7 +21,7 @@ public class CatalogPageTests {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    @BeforeTest
+    @BeforeMethod
     public void setup() {
         ChromeOptions options = new ChromeOptions();
         driver = new ChromeDriver();
