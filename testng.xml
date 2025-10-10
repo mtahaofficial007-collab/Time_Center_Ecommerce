@@ -58,4 +58,16 @@
         </classes>
     </test>
 
+    <test name="Catalog Page Tests">
+        <classes>
+            <class name="test.CatalogPageTests">
+                <methods>
+                    <include name="verifyUnderFiftyFilterResults"/>
+                    <include name="verifyBetween50And70FilterResults"/>
+                    <include name="verifyingFilterWorking"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
 </suite>
