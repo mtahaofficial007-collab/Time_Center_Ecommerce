@@ -145,8 +145,9 @@ public class AddToCartTests {
     }
 
     @AfterMethod
-    public void quit() {
-        driver.quit();
-    }
+    public void tearDown() {
+        if(driver != null) {
+            driver.quit();
+        }}
 
 }
