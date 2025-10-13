@@ -18,7 +18,7 @@ public class SearchFieldTests {
         ChromeOptions options = new ChromeOptions();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://timecenter.vercel.app/");
+        driver.get("https://timecenterfsd.com/");
     }
 
     @Test
